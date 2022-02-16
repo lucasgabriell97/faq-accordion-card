@@ -11,12 +11,19 @@
     width: 100%;
 }
 
+/* IMAGE BOX */
+
+.image-box {
+    display: none;
+}
+
 /* CARD */
 
 .card {
-    background-color: $light-gray;
+    background-color: $card-color;
     width: 21.3rem;
-    border-radius: 1.7rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 9px 19px -4px rgba(0,0,0,0.32);
 
     position: relative;
 }
@@ -29,16 +36,23 @@
     justify-content: center;
     align-items: center;
 
-    .shadow-image {
+    .shadow-image-mobile {
         width: 15rem;
     }
     
     .image-woman-mobile {
-        
         width: 15rem;
 
         position: absolute;
         top: -6.7rem;
+    }
+
+    .shadow-image-desktop {
+        display: none;
+    }
+
+    .image-woman-desktop {
+        display: none;
     }
 }
 
@@ -112,4 +126,103 @@
     }
 }
 
-/* FOOTER */
+/* MEDIUM DEVICES - TABLETS */
+
+@media (min-width: 700px) {
+    /* CARD */
+
+    .card {
+        width: 30rem;
+    }
+
+    .questions {
+        padding: 0 2rem 3rem 2rem;
+    }
+}
+
+/* LARGE DEVICES - DESKTOPS */
+
+@media (min-width: 1000px) {
+    .image-box {  
+        display: block;
+
+        width: 10.2rem;
+        position: relative;
+        top: 2.6rem;
+        left: -24.9rem;
+        
+        z-index: 1;
+    }
+
+    /* CARD */
+
+    .card {
+        display: flex;
+        align-items: center;
+
+        width: 50rem;
+        height: 27rem;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    /* CARD CONTENT */
+
+    .woman-image {
+        width: 22rem;
+
+        .shadow-image-mobile {
+            display: none;
+        }
+    
+        .image-woman-mobile {
+            display: none;
+        }
+
+        .shadow-image-desktop {
+            display: block;
+
+            width: 48rem;
+            position: absolute;
+            left: -27.2rem;
+            top: -14.4rem;
+        }
+
+        .image-woman-desktop {
+            display: block;
+
+            width: 24.8rem;
+            position: relative;
+            left: -2.7rem;
+            top: 0;
+        }
+    }
+
+    .questions {
+        padding: 1rem 5rem 1rem 3rem;
+
+        .title {
+            text-align: start;
+            font-size: 1.8rem;
+            margin: 0 0 2rem 0;
+        }
+    
+        .question {
+            margin: 0.8rem 0;
+    
+            h3 {
+                font-size: 0.85rem;
+                align-self: flex-end;
+                margin-right: 4.2rem;
+            }
+        }
+
+        .answer {
+            p {
+                margin: 0.8rem 0;
+                font-size: 0.75rem;
+            }
+            
+        }
+    }
+}
