@@ -4,6 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-weight: 400;
 }
 
 a {
@@ -90,6 +91,7 @@ body {
 .questions .title {
   text-align: center;
   color: #1d1e35;
+  font-weight: 700;
   margin: 1.3rem;
 }
 
@@ -103,11 +105,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 1rem 0;
+  margin: 0.8rem 0;
 }
 
 .questions .question h3 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 400;
   color: #4a4b5e;
   cursor: pointer;
@@ -119,15 +121,34 @@ body {
   color: #f47c57;
 }
 
+.questions .question .question-bold {
+  color: #1d1e35;
+  font-weight: 700;
+}
+
 .questions .question .arrow-icon {
   cursor: pointer;
 }
 
-.questions .answer p {
+.questions .question .icon-rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.questions .answer {
+  display: none;
+}
+
+.questions .active {
+  display: block;
   margin: 1rem 0;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   line-height: 1.2rem;
   color: #787887;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .questions .line {
@@ -139,7 +160,7 @@ body {
 .attribution {
   margin-bottom: 1rem;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #1d1e35;
 }
 
@@ -213,7 +234,7 @@ body {
     top: 0;
   }
   .questions {
-    padding: 1rem 5rem 1rem 3rem;
+    padding: 1rem 4rem 1rem 3rem;
   }
   .questions .title {
     text-align: start;
@@ -227,7 +248,7 @@ body {
     font-size: 0.85rem;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    margin-right: 4.2rem;
+    margin-right: 5rem;
   }
   .questions .answer p {
     margin: 0.8rem 0;
