@@ -8,7 +8,7 @@
 
 ## 📚 Sobre o projeto
 
-O desafio se trata de um cartão de perguntas, totalmente responsivo e com a funcionalidade do usuário clicar na pergunta para que exiba e esconda a resposta. 
+O desafio se trata de um cartão de perguntas, totalmente responsivo e com a funcionalidade de exibir e esconder a resposta quando o usuário clicar na pergunta. 
 
 ## 💼 Tecnologias utilizadas
 
