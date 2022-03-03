@@ -108,7 +108,7 @@ body {
   margin: 0.8rem 0;
 }
 
-.questions .question h3 {
+.questions .question h2 {
   font-size: 0.85rem;
   font-weight: 400;
   color: #4a4b5e;
@@ -117,7 +117,7 @@ body {
   transition: 0.1s;
 }
 
-.questions .question h3:hover {
+.questions .question h2:hover {
   color: #f47c57;
 }
 
@@ -244,7 +244,7 @@ body {
   .questions .question {
     margin: 0.8rem 0;
   }
-  .questions .question h3 {
+  .questions .question h2 {
     font-size: 0.85rem;
     -ms-flex-item-align: end;
         align-self: flex-end;
